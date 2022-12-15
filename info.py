@@ -42,17 +42,12 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Cinema_Collections_Off')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION",<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>↬ File Name:</b><code> {file_name}</code>\n<b>↬ Size:</b> {file_size}\n\n<code>𝗝𝗢𝗜𝗡</code> @Cinema_Collections_Off <code>𝗙𝗢𝗥 𝗟𝗔𝗧𝗘𝗦𝗧 𝗠𝗢𝗩𝗜𝗘𝗦 𝗔𝗡𝗗 𝗨𝗣𝗗𝗔𝗧𝗘𝗦.!</code>")
 
-<b>🧿 Fɪʟᴇ Sɪᴢᴇ : </b> <code>{file_size}</code>
 
-=========== • ✠ • ===========
 
-▫️ ɢʀᴏᴜᴘ : <a href="https://t.me/Cinema_Collections_Off">ᴍᴏᴠɪᴇ ʜᴜʙ</a>
 
-▫️ ɢʀᴏᴜᴘ : <a href="https://t.me/Cinema_Collections_Off">ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇs</a>
 
-=========== • ✠ • ===========</b>)
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
