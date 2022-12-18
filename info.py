@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = '10001717'
 API_HASH = 'c8cdc2079f7ab083e644381740260265'
-BOT_TOKEN = '5983113561:AAGVN12niXObAxtw98BFa51IZIorzVZn0eI'
+BOT_TOKEN = '5114144379:AAGbk9mnh2PBBtmAZPswlECZO6ZNoNw4lbc'
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -42,7 +42,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CINEMAHUB_NEW_MOVIES')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>↬ File Name:</b><code> {file_name}</code>\n<b>↬ Size:</b> {file_size}\n\n<code>𝗝𝗢𝗜𝗡</code> @Cinema_Collections_Off <code>𝗙𝗢𝗥 𝗟𝗔𝗧𝗘𝗦𝗧 𝗠𝗢𝗩𝗜𝗘𝗦 𝗔𝗡𝗗 𝗨𝗣𝗗𝗔𝗧𝗘𝗦.!</code>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>↬ File Name:</b><code> {file_name}</code>\n<b>↬ Size:</b> {file_size}\n\n<code>𝗝𝗢𝗜𝗡</code> @CINEMAHUB_NEW_MOVIES' <code>𝗙𝗢𝗥 𝗟𝗔𝗧𝗘𝗦𝗧 𝗠𝗢𝗩𝗜𝗘𝗦 𝗔𝗡𝗗 𝗨𝗣𝗗𝗔𝗧𝗘𝗦.!</code>")
 
 
 
