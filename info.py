@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = '10001717'
 API_HASH = 'c8cdc2079f7ab083e644381740260265'
-BOT_TOKEN = '5114144379:AAGumo1p_jqT-cCSDZYamX2EvYeU5coaA_I'
+BOT_TOKEN = '5114144379:AAGD5fiVza-9F2gw59xj70wBAtSa15lJ5SA'
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -26,7 +26,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001833247384').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = ' -1001656264765'
+auth_channel = '-1001656264765'
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -40,7 +40,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001632393579))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CINEMAHUB_NEW_MOVIES')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = is_enabled((environ.get('IMDB', "Flase")), Flase)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>↬ File Name:</b><code> {file_name}</code>\n<b>↬ Size:</b> {file_size}\n\n<code>𝗝𝗢𝗜𝗡</code> @CINEMAHUB_NEW_MOVIES' <code>𝗙𝗢𝗥 𝗟𝗔𝗧𝗘𝗦𝗧 𝗠𝗢𝗩𝗜𝗘𝗦 𝗔𝗡𝗗 𝗨𝗣𝗗𝗔𝗧𝗘𝗦.!</code>")
 
