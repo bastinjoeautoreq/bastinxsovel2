@@ -19,7 +19,7 @@ BOT_TOKEN = '5865126212:AAEDj-4e5N4emyhcb6y-YuOTu9SnJq2emeY'
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/7c7548ed1de51ca07dd25.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/9177e1b10c2086cbd6ca9.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5531461861 1198310247 1878911986').split()]
@@ -32,8 +32,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://CM:CM@cluster0.gsghs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "@lucascinemahubbot")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Bastin:<password>@cluster0.irj81sj.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
